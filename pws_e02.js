@@ -10,4 +10,4 @@ function promise2 () {
         setTimeout(resolve, 300, 'FULFILLED!');
     });
 }
-promise2.then(console.log);
+promise2().then(console.log);
