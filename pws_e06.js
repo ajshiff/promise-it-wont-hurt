@@ -15,7 +15,7 @@ var prom = Promise.resolve('Start Promise Chain');
 // prom.then(console.log).catch(console.log.bind(null, 'error'));
 
 // Runs then, but not catch
-// prom.then(console.log).catch((err) => console.log(err));
+prom.then(console.log).catch((err) => console.log(err));
 
 // 
-prom.then(() => new Promise((res,rej) => rej('Banana'))).then(console.log).catch(function(value){throw 'error 2.0';}).catch(console.log);
+// prom.then(() => new Promise((res,rej) => rej('Banana'))).then(console.log).catch(function(value){throw 'error 2.0';}).catch(console.log);
